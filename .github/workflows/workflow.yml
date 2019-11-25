@@ -18,7 +18,6 @@ jobs:
     - name: Azure CLI script
       uses: azure/CLI@v1
       with:
-        azcliversion: 2.0.72
+        azcliversion: 2.0.75
         inlineScript: |
-          az account show
-          az storage -h
+          az vm list --show-details -o table
