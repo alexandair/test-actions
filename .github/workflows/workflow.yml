@@ -20,4 +20,4 @@ jobs:
       with:
         azcliversion: 2.0.76
         inlineScript: |
-          az vm list --show-details
+          az group list -o table
