@@ -16,4 +16,4 @@ jobs:
       if: github.event.action == 'inline'
       run: |
         $PSVersionTable;
-        Get-Module -ListAvailable;
+        Get-Module -ListAvailable | Format-Table name,version;
