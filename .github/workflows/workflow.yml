@@ -1,5 +1,4 @@
 # File: .github/workflows/workflow.yml
-# new creds
 
 on: [push]
 
