@@ -14,7 +14,7 @@ jobs:
     - name: Azure Login
       uses: azure/login@v1
       with:
-        creds: ${{ secrets.RUCNO }}
+        creds: ${{ secrets.PROBA }}
     
     - name: Azure CLI script
       uses: azure/CLI@v1
