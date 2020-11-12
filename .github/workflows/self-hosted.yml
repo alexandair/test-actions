@@ -1,0 +1,20 @@
+# File: .github/workflows/workflow.yml
+
+on: [push]
+
+name: Azure System-assigned Managed Identity sample
+
+jobs:
+
+  build-and-deploy:
+    runs-on: self-hosted
+    steps:
+    
+    - name: Login via Az module
+      uses: jpda/login
+      with:
+        enable-managed-identity: true
+    
+    - name: Azure CLI script
+      run: |
+        az group list -o table
