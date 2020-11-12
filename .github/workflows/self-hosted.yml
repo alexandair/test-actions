@@ -11,7 +11,7 @@ jobs:
     steps:
     
     - name: Login via Az module
-      uses: jpda/login
+      uses: jpda/login@v1.1
       with:
         enable-managed-identity: true
     
